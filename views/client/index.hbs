@@ -1,0 +1,65 @@
+<link rel="stylesheet" href="../css/style.css">
+<div class="body">
+		<div class="header">
+			<div class="course">WPR</div>
+			<div class="mern">
+				<div class="mern-stack">m</div>
+				<div class="mern-stack">e</div>
+				<div class="mern-stack">r</div>
+				<div class="mern-stack">n</div>
+			</div>
+		</div>
+		<div class="quizname">
+			<div class="htmlquiz">
+				HTML Quiz
+			</div>
+		</div>
+		<div class="author">
+			<div class="authorname">
+				By Phuong Linh
+			</div>
+		</div>
+		<div class="content" id="content">
+			<div class="tutorial">
+				<div class="tutoitem">
+					<div class="tutotitle">The Test</div>
+					<div class="tutocontent">The test contains 10 questions and there is no time limit</div>
+					<div class="tutocontent">The test is not offical, it's just a nice way to see how must you know, or don't know about HTML </div>
+				</div>
+				<div class="tutoitem">
+					<div class="tutotitle">Count your Score</div>
+					<div class="tutocontent">You get 1 point for each correct answer. Maximum score is 10 points</div>
+				</div>
+			</div>
+			<div class="startbanner">
+				<div class="sbtitle">Start the quiz</div>
+				<div class="sbpara">Good luck!</div>
+				<div class="sbbtn">
+					<a href="#quiz"><button id="startbtn" onclick="showquiz();">Start the HTML Quiz ></button></a>
+				</div>
+			</div>
+      <form id="submitForm" action="/attempts/:id/submit" method="post">
+			<div class="quiz" id="quiz">
+			</div>
+      </form>
+			<div class="completebanner">
+				<div class="cpbtn">
+					<a href="#resultbanner"><button id="cmpbtn" onclick="submit();">Submit your answer</button></a>
+				</div>
+			</div>
+			<div class="resultbanner" id="resultbanner">
+				<div class="sbtitle">Result:</div>
+				<div class="sbpara score">1/10</div>
+				<div class="sbpara scorePercent">10%</div>
+				<div class="sbpara scoreText"></div>
+				<div class="sbbtn">
+					<a href="#startbtn"><button id="restartbtn" onclick="restart();">Try again</button></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+  <script src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  <script src="../js/script.js"></script>
